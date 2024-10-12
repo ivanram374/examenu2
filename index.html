@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fromula genereal</title>
+</head>
+<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula general</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #5b5f5f;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #d99246;
+            color: #080707;
+            cursor: pointer;
+        }
+
+        button{
+            width: 100%;
+            padding: 8px;
+            background-color: #0056b3;
+            color: aliceblue;
+            border: none;
+            border-radius: 2px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Formula general</h2>
+    <form action="procesar.php" method="post">
+        <div class="form-group">
+            <label for="nombre">Ingresa el valor a</a></A>:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+            <label for="apellido_paterno">Ingresa el valor de b:</label>
+            <input type="text" id="apellido_paterno" required>
+        </div>
+        <div class="form-group">
+            <label for="apellido_materno">Ingresa el valor de c:</label>
+            <input type="text" id="apellido_materno" required>
+        </div>
+
+        
+
+            
+             <button type="button" onclick="GenerarResultado()"> Generar Resultado</button>
+            
+
+        <div class="form-group">
+            <label for="resultado 1">X1:</label>
+            <input type="text" id="resultado1" name="X1" required>
+        </div>
+        <div class="form-group">
+            <label for="resultado 2">X2:</label>
+            <input type="text" id="resultado2" name="X2" required>
+        </div>
+        
+        
+    </form>
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
